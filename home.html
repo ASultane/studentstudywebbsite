@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>welcome</h3>
+  
+  <hr> <br>
+  <div class="row">
+    {% for i in data %}
+    <div class="col-md-3 my-2" style="overflow: hidden;">
+      <a href="\{{i.cat}}">
+        <div class="card">
+          <img src="{{i.image.url}}" style="width:254px;height:150px;" class="card-img-top"  alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              {{i.title}}
+            </h5>
+            {{i.desc}}
+          </div>
+        </div>
+      </a>
+    </div>
+    {% if forloop.counter|divisibleby:4 or forloop.last %}
+    </div><div class="row">
+      {% endif %}
+    {% endfor %}
+</section>
+{% endblock content %}
