@@ -1,1 +1,2 @@
-# studentstudywebbsite
+# studentstudywebbsite\
+Create an online student portal with secure login and role-based access for students, teachers, . Offer profile management, course materials, and assignment submissions. Include a digital library, schedule management etc . Ensure mobile accessibility, customization options, and data security compliance. Support students with counseling resources and technical support, all within a user-friendly, responsive design.
